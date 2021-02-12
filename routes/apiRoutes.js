@@ -1,6 +1,7 @@
 const db = require("../models");
 const router = require("express").Router();
 
+// Get all workouts
 router.get("/api/workouts", (req, res) => {
   db.Workout.find({})
     .then((dbWorkout) => {
@@ -29,6 +30,7 @@ router.put("/api/workouts/:id", (req, res) => {
     });
 });
 
+// Create new workout
 router.post("/api/workouts", ({ body }, res) => {
   db.Workout.create({})
     .then((dbWorkout) => {
