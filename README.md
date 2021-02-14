@@ -1,6 +1,3 @@
-<div align="center"> <img src="http://res.cloudinary.com/muhimen/image/upload/v1604122377/student_portal_logo.png" alt="logo"> 
-</div>
-
 
 # Fitness-Tracker
 
