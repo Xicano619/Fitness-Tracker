@@ -19,7 +19,7 @@ To install this application the user will need to install Node.js and MongoDb-At
 
 ## Usage 
 
-The app is depoloyed on Heroku platform. [OPEN Fitness-Tracker](https://cryptic-springs-92116.herokuapp.com/)
+The app is deployed on Heroku platform. [OPEN Fitness-Tracker](https://cryptic-springs-92116.herokuapp.com/)
 <br>
 After opening the link, the user will have at their will the fitness tracker, asking them to enter new exercise.  
 <br>
@@ -27,64 +27,32 @@ After opening the link, the user will have at their will the fitness tracker, as
 ![Fitness Tracker Dashboard](./public/images/Dashboard.PNG) 
 
 <br>
-If the user is a member already, then the link `Log in here` under the sign up form will lead to the login page:
+The user must add an exercise to  start,  selecting from the two exercise types: Resistance or Cardio.
 <br><br>
 
-![Login up page screenshot](./public/img/s2.jpg) 
-
-After logging in, the student will be taken to the members page with student dashboard and 2 sections for Front-end development and Back-end development topics that the class needs to go over. In the header, there's a `Logout` link and on the right there's student's email and the type of course that's being taken. The Front-end development section displays 2 tables with topics for HTML and CSS programming languages. Under each topic's heading there's a Resourses link with the documentation about this particular topic. Underneath, there's a progress bar that's reflecting the success of the class comparing the number of completed topics to the total, and outputs the percentage to the screen.
-<br>
-
-![Members page screenshot](./public/img/s3.png) 
+![Login up page screenshot](./public/images/Select-Exercise-Type.png) 
 
 <br>
-After choosing a new topic, the student can type it in the empty field under the ordered list and click the button "Add topic"
+Next, the user must input the specific workout plan according to the type of exercise. In this example, the user will be doing 'Resistance' workout type in which they will be doing bench-pressing 200lbs. in a 4(sets)X10(reps) for a duration of 10 minutes.
+<br><br>
+
+![Resistance Workout](./public/images/ListExercise.png) 
+
+
+Once the user tracks the specificity of their workout, the will then select the 'add exercise' (green) button,the app will register it and subsequently alert you ont he top right corner. 
 <br>
 
-![Adding a topic](./public/img/s4.jpg) 
+![Add Exercise](./public/images/Success-Workout.png) 
 
 <br>
-
-After that, the topic will appear at the end of the list and also will be saved in the database.
+Lastly, the user will be able to track via diagrams and line graph of their progression, and weekly routines in the workout dashboard page.
 <br>
 
-![Added topic](./public/img/s5.jpg) 
-
-<br>
-
-After doing so, the student will notice that the number reflecting the percentage ratio between copmleted/total topic will be automatically updated as well.
-<br>
-
-![Updated progress bar](./public/img/s6.jpg) 
-
-<br>
-Then, after completing certain topics(for example №5 from HTML table and №5 from CSS), the student can click on the blue complete button with a chec kmark. The progress bar will be updated accordingly.
-<br>
-
-![Checked off topics, updated progress bar](./public/img/s7.jpg) 
+![Workout Dashboard](./public/images/Workout-Dashboard.png) 
 
 <br>
 
-The Back-end development section work the same easy intuitive way. 
-<br>
-A new technology - The Nodemailer library was implemented for the students to send their questions straigt to the Codebasics.com official email. Nodemailer is a single module with zero dependencies for Node.js, designed for sending emails. Its main features include: platform-independence, security, Unicode support, HTML content and embedded image attachments, different transport methods besides SMTP support.The user just need to fill up the form with his name, email and  the message. After clicking green button "Send message" the nodemailer function will direct it to the email indicated on line 183 in `api-routes.js` file:
-<br>
 
-![Codebasics email](./public/img/s9.jpg) 
-
-<br>
-<br>
-
-![Mailing form](./public/img/s8.jpg) 
-
-<br>
-
-### Contributors
-
-* Larry Gamboa [click here](https://github.com/larrygamboa).
-* Anastasia Ivaschenko [click here](https://github.com/anaiva27).
-* Ivan Sillas-Navarro [click here](https://github.com/Xicano619).
-* Victor Bunduc [click here](https://github.com/victorbunduc).
 
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
